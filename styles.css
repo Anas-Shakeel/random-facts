@@ -1,0 +1,284 @@
+/* ? Variables */
+:root {
+    --primary-color: #eb1f24;
+    --primary-color-darker: #bc1013;
+    --app-bg-color: #ccc;
+    /* --nav-bg-color: #bfbfbf; */
+    --nav-bg-color: #c2c2c2;
+    --box-bg-color: gainsboro;
+    --default-text-color: #333;
+}
+
+* {
+    font-family: "Courier New", Courier, monospace;
+    color: var(--default-text-color);
+}
+
+body {
+    background-color: var(--app-bg-color);
+}
+
+.navbar-custom {
+    background-color: var(--nav-bg-color);
+    font-size: 1.2rem;
+    padding: 1%;
+}
+
+.navbar-brand-custom p {
+    font-size: 1.8rem;
+    display: inline;
+}
+
+.color-text {
+    color: var(--default-text-color);
+}
+
+.color-text-red {
+    color: var(--primary-color);
+}
+
+.nav-link-custom {
+    color: var(--default-text-color);
+    font-weight: 700;
+}
+
+.nav-link-custom:hover {
+    color: var(--primary-color);
+}
+.nav-link-custom:active {
+    color: var(--primary-color-darker);
+}
+
+.nav-link-active-custom {
+    color: var(--primary-color);
+}
+
+.nav-dd-custom {
+    background-color: var(--app-bg-color);
+    border-radius: 2px;
+}
+
+.nav-dd-item-custom:hover {
+    background-color: gainsboro;
+    color: var(--primary-color);
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    margin-left: 2%;
+}
+
+/* ? Custom Scollbar */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #acacac;
+    border-radius: 0.5rem;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-color);
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background-color: var(--nav-bg-color);
+    border-radius: 2px;
+}
+
+/* ? Home Styling */
+.main {
+    padding: 1.1rem;
+    height: 36%;
+    margin-bottom: 2rem;
+}
+
+.home-heading-section {
+    margin-top: 1.5rem;
+    padding: 2%;
+}
+
+.heading p {
+    display: inline;
+    margin: 0;
+    font-size: 4rem;
+}
+
+.home-heading-desc {
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.appname {
+    display: flex;
+}
+
+.home-buttons-section {
+    display: flex;
+    justify-content: center;
+    padding: 2% 4%;
+}
+
+/* ? Custom Button */
+.btn-custom {
+    width: 22vw;
+    border-radius: 2px;
+    border: 2px solid var(--primary-color);
+    color: var(--default-text-color);
+    font-size: 1.2rem;
+    --bs-btn-active-bg: var(--primary-color-darker);
+    --bs-btn-active-border-color: var(--primary-color-darker);
+}
+
+.btn-custom:hover {
+    color: white;
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    font-weight: bold;
+}
+
+/* ? Footer Styling Starts Here */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 2px;
+    width: 100%;
+    height: 4vh;
+    padding: 2% 0px;
+    background-color: var(--nav-bg-color);
+    font-size: 1.6vw;
+}
+
+.footer-content p {
+    display: inline;
+}
+
+/* ? Facts Styling */
+.facts-main {
+    /* background-color: rgb(184, 184, 184); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    padding: 2rem;
+}
+
+.facts-heading {
+    font-size: 2.5rem;
+}
+
+.facts-heading p {
+    display: inline;
+}
+
+.fact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fact-box {
+    width: 80vw;
+    height: 20rem;
+    background-color: var(--box-bg-color);
+    border-radius: 2px;
+    padding: 1rem;
+}
+
+.fact-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.fact-text {
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.fact-buttons-section {
+    padding: 1rem;
+}
+
+/* ? About Styling */
+.about-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    padding: 2rem;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-box {
+    width: 80vw;
+    height: 25rem;
+    background-color: var(--box-bg-color);
+    border-radius: 2px;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.about-text {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 0.5rem;
+    border-radius: 100%;
+}
+
+.icon:hover {
+    border: 1px solid var(--primary-color);
+    background-color: whitesmoke;
+}
+
+.icon:visited {
+    /* Useless {just to avoid wierd behaviour} */
+    background-size: contain;
+}
+
+.github-icon {
+    background-image: url("assets/github_icon_dark.png");
+}
+.instagram-icon {
+    background-image: url("assets/instagram_icon_dark.png");
+}
