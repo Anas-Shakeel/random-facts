@@ -95,18 +95,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // Get the Random_fact button
+    // Add Load event to Random Button
     const random_fact_button = document.querySelector("#refreshFact");
-
-    // Add Load event to random button
     random_fact_button.addEventListener("click", () => {
         load_fact();
     });
 
-    // Get the Copy_fact button
+    // Add Copy event to Copy Button
     const copy_fact_button = document.querySelector("#copyFact");
-    // Add Copy event to copy button
-    copy_fact_button.addEventListener("click", () => {
+    copy_fact_button.addEventListener("click", (event) => {
         copy_fact();
     });
 
