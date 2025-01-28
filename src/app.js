@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const CAT_API = "https://meowfacts.herokuapp.com/"; // 'data':[0]
     const DOG_API = "https://dog-api.kinduff.com/api/facts?number=1"; // 'facts':[0]
     const FUN_API = "https://uselessfacts.jsph.pl/api/v2/facts/random"; // 'text'
+    const NUMBERS_API = "http://numbersapi.com/random?json"; // 'text'
     // const USELESS_RANDOM_API "https://uselessfacts.jsph.pl/api/v2/facts/random" // 'text'
-    // const NUMBERS_API "http://numbersapi.com/random?json" // 'text'
 
     // Get the fact element & it's ID
     const fact_element = document.querySelector(".fact-text");
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Load function (handles everything on auto)
     async function load_fact() {
         // Display a loading message
-        // fact_element.innerHTML = "Loading fact...";
+        fact_element.innerHTML = "Loading...";
 
         try {
             // Call Appropriate API and inject the fact into DOM
@@ -67,6 +67,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 case "funFact":
                     const fun_fact = await fetch_api(FUN_API);
                     write_fact_to_DOM(fun_fact["text"]);
+                    break;
+
+                // Call Numbers API
+                case "numberFact":
+                    const number_fact = await fetch_api(NUMBERS_API);
+                    write_fact_to_DOM(number_fact["text"]);
                     break;
 
                 // Call Cat API
