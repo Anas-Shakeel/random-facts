@@ -1,30 +1,17 @@
-# Random.Facts 
-This is a simple web app/site that i built as an assignment for __CS50.x__.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Anas-Shakeel/random-facts/refs/heads/main/static/images/random-facts-preview.png" />
+</p>
 
-[Visit the site](https://anas-shakeel.github.io/random-facts)
+# Random.Facts
 
-### What is this project?
-This simple app displays some random facts about cats, dogs and other fun facts.
-It consumes 3 __third-party APIs__ to fetch the data/facts and dynamically injects on the site.
-
-### Tech Stack used:
-> __HTML__ <br>
-> __CSS__ <br>
-> __Javscript__ <br>
-> __Bootstrap__ <br>
+[Random.facts](https://anas-shakeel.github.io/random-facts) is a simple website that displays random facts.
+It was made as an assignment for [Harvard's CS50](https://www.edx.org/cs50) course.
 
 ### APIs used in this project:
-These are __Free Public APIs__ i found on a repository called __[Public APIs](https://github.com/public-apis/public-apis).__
 
-> - Random Cat Facts <br>
-> Endpoint: https://meowfacts.herokuapp.com/
->
-> - Random Dog Facts <br>
-> Endpoint: https://dog-api.kinduff.com/api/facts
-> 
-> - Random Fun Facts <br>
-> Endpoint: https://uselessfacts.jsph.pl/api/v2/facts/random
+These are **Free Public APIs** i found in **[Public APIs](https://github.com/public-apis/public-apis)** repository.
 
----
-
-![app-icon](assets/app_icon.ico)
+-   [Cat Facts](https://meowfacts.herokuapp.com/)
+-   [Dog Facts](https://dog-api.kinduff.com/api/facts)
+-   [Fun Facts](https://uselessfacts.jsph.pl/api/v2/facts/random)
+-   [Number Facts](http://numbersapi.com/random)
