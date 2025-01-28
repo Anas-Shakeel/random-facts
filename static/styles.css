@@ -52,6 +52,7 @@ body {
     align-items: center;
     flex-direction: row;
     padding: 0 5vw;
+    user-select: none;
 }
 
 .logo-container {
@@ -240,6 +241,7 @@ body {
     letter-spacing: 1pt;
     font-size: 0.9rem;
     border-top: 1px solid hsl(0, 0%, 80%);
+    user-select: none;
 }
 
 /* ? Custom Scollbar */
@@ -277,6 +279,7 @@ body {
     text-decoration: none;
     box-sizing: border-box;
     cursor: pointer;
+    user-select: none;
 
     background-color: var(--btn-color-normal);
     color: var(--text-color-dark);
@@ -371,4 +374,11 @@ body {
 
 .no-text-decor {
     text-decoration: none;
+}
+
+::selection {
+    background-color: hsl(0, 0%, 88%);
+}
+::selection:hover {
+    color: var(--accent-color);
 }
