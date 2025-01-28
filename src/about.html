@@ -23,11 +23,25 @@
                 </a>
 
                 <!-- Navlinks -->
-                <div class="navlinks-container">
-                    <a href="index.html" class="navlink">Home</a>
-                    <a href="#" class="navlink">Facts</a>
-                    <a href="about.html" class="navlink navlink-active">About</a>
-                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Facts</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-link" href="cat_facts.html">Cat Facts</a></li>
+                            <li><a class="dropdown-link" href="dog_facts.html">Dog Facts</a></li>
+                            <li><hr class="dropdown-sep" /></li>
+                            <li><a class="dropdown-link" href="fun_facts.html">Fun Facts</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                </ul>
             </nav>
         </header>
 
