@@ -43,6 +43,25 @@
                         <a href="about.html" class="nav-link">About</a>
                     </li>
                 </ul>
+
+                <!-- Hamburger Nav Menu -->
+                <button id="menuBtn" class="button ham-menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon">
+                        <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </button>
+
+                <div id="overlay" class="overlay"></div>
+
+                <div id="menu" class="menu">
+                    <a href="index.html">Home</a>
+                    <a href="cat_facts.html">Cat Facts</a>
+                    <a href="dog_facts.html">Dog Facts</a>
+                    <a href="fun_facts.html">Fun Facts</a>
+                    <a href="about.html">About</a>
+                </div>
             </nav>
         </header>
 
@@ -74,7 +93,7 @@
                             Discover something new, unexpected, and totally fascinating with every click.
                         </p>
 
-                        <a href="fun_facts.html" class="button button-active">Read Fun Facts</a>
+                        <a href="fun_facts.html" class="button button-mbl button-active">Read Fun Facts</a>
                     </div>
                 </div>
             </div>
@@ -87,4 +106,19 @@
             </div>
         </footer>
     </body>
+    <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const menu = document.getElementById("menu");
+        const overlay = document.getElementById("overlay");
+
+        menuBtn.addEventListener("click", () => {
+            menu.style.display = "block";
+            overlay.style.display = "block";
+        });
+
+        overlay.addEventListener("click", () => {
+            menu.style.display = "none";
+            overlay.style.display = "none";
+        });
+    </script>
 </html>

@@ -43,6 +43,25 @@
                         <a href="about.html" class="nav-link">About</a>
                     </li>
                 </ul>
+
+                <!-- Hamburger Nav Menu -->
+                <button id="menuBtn" class="button ham-menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon">
+                        <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </button>
+
+                <div id="overlay" class="overlay"></div>
+
+                <div id="menu" class="menu">
+                    <a href="index.html">Home</a>
+                    <a href="cat_facts.html">Cat Facts</a>
+                    <a href="dog_facts.html">Dog Facts</a>
+                    <a href="fun_facts.html">Fun Facts</a>
+                    <a href="about.html">About</a>
+                </div>
             </nav>
         </header>
 
@@ -97,6 +116,37 @@
                     <div class="content-body">
                         <p class="fact-text" id="numberFact">Loading...</p>
                     </div>
+
+                    <!-- For mobile devices -->
+                    <div class="button-container button-container-mbl">
+                        <!-- Refresh Button -->
+                        <button class="button button-mbl" id="refreshFactMbl">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 50 50"
+                                width="96"
+                                height="96"
+                                class="icon button-mini-icon">
+                                <path
+                                    d="M20 4C14.507813 4 10 8.507813 10 14L10 31.75L7.125 28.875L4.3125 31.71875L12 39.40625L19.6875 31.71875L16.875 28.90625L14 31.75L14 14C14 10.691406 16.691406 8 20 8L31 8L31 4 Z M 38 10.59375L30.28125 18.3125L33.125 21.125L36 18.25L36 36C36 39.308594 33.308594 42 30 42L19 42L19 46L30 46C35.492188 46 40 41.492188 40 36L40 18.25L42.875 21.125L45.6875 18.28125Z" />
+                            </svg>
+                            Next Fact
+                        </button>
+
+                        <!-- Copy Button -->
+                        <button class="button button-mbl" id="copyFactMbl">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 48 48"
+                                width="96"
+                                height="96"
+                                class="icon button-mini-icon">
+                                <path
+                                    d="M18.5 5C15.480226 5 13 7.4802259 13 10.5L13 32.5C13 35.519774 15.480226 38 18.5 38L34.5 38C37.519774 38 40 35.519774 40 32.5L40 10.5C40 7.4802259 37.519774 5 34.5 5L18.5 5 z M 18.5 8L34.5 8C35.898226 8 37 9.1017741 37 10.5L37 32.5C37 33.898226 35.898226 35 34.5 35L18.5 35C17.101774 35 16 33.898226 16 32.5L16 10.5C16 9.1017741 17.101774 8 18.5 8 z M 11 10L9.78125 10.8125C8.66825 11.5545 8 12.803625 8 14.140625L8 33.5C8 38.747 12.253 43 17.5 43L30.859375 43C32.197375 43 33.4465 42.33175 34.1875 41.21875L35 40L17.5 40C13.91 40 11 37.09 11 33.5L11 10 z" />
+                            </svg>
+                            Copy Fact
+                        </button>
+                    </div>
                 </div>
             </div>
         </main>
@@ -111,4 +161,19 @@
         <!-- JAVASCRIPT SCRIPT -->
         <script src="app.js"></script>
     </body>
+    <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const menu = document.getElementById("menu");
+        const overlay = document.getElementById("overlay");
+
+        menuBtn.addEventListener("click", () => {
+            menu.style.display = "block";
+            overlay.style.display = "block";
+        });
+
+        overlay.addEventListener("click", () => {
+            menu.style.display = "none";
+            overlay.style.display = "none";
+        });
+    </script>
 </html>

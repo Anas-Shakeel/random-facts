@@ -95,17 +95,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // Add Load event to Random Button
-    const random_fact_button = document.querySelector("#refreshFact");
-    random_fact_button.addEventListener("click", () => {
-        load_fact();
-    });
+    // Add events to Button
+    document.querySelector("#refreshFact").addEventListener("click", load_fact);
+    document.querySelector("#copyFact").addEventListener("click", copy_fact);
 
-    // Add Copy event to Copy Button
-    const copy_fact_button = document.querySelector("#copyFact");
-    copy_fact_button.addEventListener("click", (event) => {
-        copy_fact();
-    });
+    // For mobile buttons
+    document.querySelector("#refreshFactMbl").addEventListener("click", load_fact);
+    document.querySelector("#copyFactMbl").addEventListener("click", copy_fact);
 
     // Load a fact on page refresh or reload!
     load_fact();
